@@ -45,8 +45,8 @@ jobs:
           build-args: RELEASE=${{ steps.get_version.outputs.VERSION-NO-V }}
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           tags: |
-            docker.io/alephium/explorer-backend:${{ steps.get_version.outputs.VERSION }}
-            docker.io/alephium/explorer-backend:latest
+            docker.io/thetrunk/explorer-backend:${{ steps.get_version.outputs.VERSION }}
+            docker.io/thetrunk/explorer-backend:latest
           push: true
 
       - name: Build and publish docker image
@@ -57,6 +57,6 @@ jobs:
           build-args: RELEASE=${{ steps.get_version.outputs.VERSION-NO-V }}
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           tags: |
-            docker.io/alephium/dev-explorer-backend:${{ steps.get_version.outputs.VERSION-NO-V }}
-            docker.io/alephium/dev-explorer-backend:latest
+            docker.io/thetrunk/dev-explorer-backend:${{ steps.get_version.outputs.VERSION-NO-V }}
+            docker.io/thetrunk/dev-explorer-backend:latest
           push: true
