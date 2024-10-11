@@ -103,7 +103,7 @@ class MarketServiceSpec extends AlephiumFutureSpec {
   }
 
   trait Fixture {
-    val localhost: InetAddress = InetAddress.getByName("127.0.0.1")
+    val localhost: InetAddress = InetAddress.getByName("172.23.60.1")
     val port                   = SocketUtil.temporaryLocalPort(SocketUtil.Both)
 
     val alph = "ALPH"

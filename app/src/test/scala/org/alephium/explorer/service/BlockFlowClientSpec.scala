@@ -48,7 +48,7 @@ import org.alephium.util.AVector
 class BlockFlowClientSpec extends AlephiumFutureSpec with DatabaseFixtureForAll {
 
   val group                  = GroupIndex.Zero
-  val localhost: InetAddress = InetAddress.getByName("127.0.0.1")
+  val localhost: InetAddress = InetAddress.getByName("172.23.60.1")
 
   "BlockFlowClient.fetchBlock" should {
     val port = SocketUtil.temporaryLocalPort(SocketUtil.Both)

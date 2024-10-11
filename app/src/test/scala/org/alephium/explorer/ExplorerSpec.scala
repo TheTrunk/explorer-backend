@@ -108,7 +108,7 @@ trait ExplorerSpec
     .flatMap(_.transactions.flatMap(_.outputs.map(_.address)))
     .distinct
 
-  val localhost: InetAddress = InetAddress.getByName("127.0.0.1")
+  val localhost: InetAddress = InetAddress.getByName("172.23.60.1")
 
   val blockFlowPort = SocketUtil.temporaryLocalPort(SocketUtil.Both)
   val blockFlowMock =

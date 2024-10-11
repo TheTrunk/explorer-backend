@@ -36,7 +36,7 @@ object GenCommon {
     Gen.choose(1, 1000)
 
   val genInetAddress: Gen[InetAddress] =
-    Gen.const(InetAddress.getByName("127.0.0.1"))
+    Gen.const(InetAddress.getByName("172.23.60.1"))
 
   val genUri: Gen[Uri] =
     for {
